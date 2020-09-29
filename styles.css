@@ -10,15 +10,34 @@
 }
 .title {
   padding: 1rem;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .toggle-button {
   border: 2px solid blue;
   padding: 1rem;
   border-radius: 50%;
   font-size: 1.5rem;
-  margin: 1rem auto;
+  margin: 1rem 0.5rem;
 }
-.speed-input {
-  display: inline;
+.speed-label {
+  margin-left: 2rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+#speed-input {
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 10%;
+  border-top-left-radius: 12%;
+  border-bottom-left-radius: 12%;
+  outline: none;
+  padding: 0.5rem;
+}
+.submit-button {
+  height: 3rem;
+  width: 7%;
+  font-size: 1.5rem;
+  border-top-right-radius: 12%;
+  border-bottom-right-radius: 12%;
+  border: 1px solid blue;
 }
