@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.controls {
+  max-width: 50%;
+  margin: 15% auto;
+  text-align: center;
+}
+.title {
+  padding: 1rem;
+  font-size: 3rem;
+}
+.toggle-button {
+  border: 2px solid blue;
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin: 1rem auto;
+}
+.speed-input {
+  display: inline;
+}
