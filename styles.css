@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  background-color: #0A0024;
 }
 .controls {
   max-width: 50%;
@@ -40,4 +41,123 @@
   border-top-right-radius: 12%;
   border-bottom-right-radius: 12%;
   border: 1px solid blue;
+}
+.submit-button:hover,
+.toggle-button:hover,
+.submit-button:active,
+.toggle-button:active {
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background: rgb(184,134,222);
+}
+
+/* --- Main section styles (lights) --- */
+.main {
+  border-radius: 25px;
+  width: 95vw;
+  height: 20vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  display: flex;
+  margin: 1rem;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: rgba(0,0,0,0.3);
+  position: relative;
+  transition: 1s all ease;
+}
+.circle:before {
+  position: absolute;
+  content: '';
+  height: 15px;
+  width: 15px;
+  left: 17.5px;
+  top: -15px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  border-radius: 2px;
+  background: rgb(68,53,73);
+  border-bottom: 2px solid rgb(97,81,107);
+}
+.circle:after {
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: 30px;
+  width: 70px;
+  height: 18.6666666667px;
+  border-bottom: 2px solid #222;
+  border-radius: 50%;
+}
+.circle:last-child::after {
+  content: '';
+  position: absolute;
+  border: none;
+}
+
+/* --- Color Styles --- */
+.orange-red {
+  background-color: #DF4E39;
+  animation: glow-1 1s infinite;
+}
+.dark-blue {
+  background-color: #001A26;
+  animation: glow-2 1s infinite;
+}
+.orange {
+  background-color: #EF8500;
+  animation: glow-3 1s infinite;
+}
+.tan {
+  background-color: #E2DB95;
+  animation: glow-4 1s infinite;
+}
+
+
+/* --- Animation key frames --- */
+@keyframes glow-1 {
+  0%,
+  100% {
+    box-shadow: 0 0 20px  5px #DF4E39;
+  }
+  50% {
+    box-shadow: none;
+  }
+}
+
+@keyframes glow-2 {
+  0%,
+  100% {
+    box-shadow: 0 0 20px  5px #001A26;
+  }
+  50% {
+    box-shadow: none;
+  }
+}
+
+@keyframes glow-3 {
+  0%,
+  100% {
+    box-shadow: 0 0 20px  5px #EF8500;
+  }
+  50% {
+    box-shadow: none;
+  }
+}
+
+@keyframes glow-4 {
+  0%,
+  100% {
+    box-shadow: 0 0 20px 5px #E2DB95;
+  }
+  50% {
+    box-shadow: none;
+  }
 }
