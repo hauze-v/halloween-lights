@@ -147,7 +147,7 @@
 @keyframes glow-1 {
   0%,
   100% {
-    box-shadow: 0 0 20px  5px #DF4E39;
+    box-shadow: 0 0 20px 5px #DF4E39;
   }
   50% {
     box-shadow: none;
@@ -157,17 +157,17 @@
 @keyframes glow-2 {
   0%,
   100% {
-    box-shadow: 0 0 20px  5px #001A26;
+    box-shadow: none;
   }
   50% {
-    box-shadow: none;
+    box-shadow: 0 0 20px 5px #001A26;
   }
 }
 
 @keyframes glow-3 {
   0%,
   100% {
-    box-shadow: 0 0 20px  5px #EF8500;
+    box-shadow: 0 0 20px 5px #EF8500;
   }
   50% {
     box-shadow: none;
@@ -177,9 +177,9 @@
 @keyframes glow-4 {
   0%,
   100% {
-    box-shadow: 0 0 20px 5px #E2DB95;
+    box-shadow: none;
   }
   50% {
-    box-shadow: none;
+    box-shadow: 0 0 20px 5px #E2DB95;
   }
 }
