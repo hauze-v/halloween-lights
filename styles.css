@@ -1,55 +1,77 @@
+@font-face {
+  font-family: 'HW';
+  src: url('fonts/feast-of-flesh-bb.regular.ttf') format('truetype')
+}
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  background-color: #0A0024;
+  background-color: #443737;
 }
 .controls {
   max-width: 50%;
-  margin: 15% auto;
+  margin: 2% auto;
   text-align: center;
+}
+.speed-buttons {
+  display: flex;
+  align-items: center;
 }
 .title {
   padding: 1rem;
-  font-size: 4rem;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: #dfddc7;
+  text-shadow: 0 0 30px #dfddc7;
+  font-family: "HW", sans-serif;
 }
 .toggle-button {
-  border: 2px solid blue;
+  border: 2px solid #DF4E39;
   padding: 1rem;
   border-radius: 50%;
   font-size: 1.5rem;
   margin: 1rem 0.5rem;
+  color: #dfddc7;
+}
+#On {
+  margin-left: 20%;
 }
 .speed-label {
-  margin-left: 2rem;
   margin-right: 1rem;
+  margin-left: 10%;
   font-size: 1.5rem;
+  color: #dfddc7;
 }
 #speed-input {
-  font-size: 1.5rem;
   height: 3rem;
-  width: 10%;
-  border-top-left-radius: 12%;
-  border-bottom-left-radius: 12%;
+  width: 20%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   outline: none;
+  border: none;
   padding: 0.5rem;
+  background-color: #ffffff;
+  
 }
-.submit-button {
+.run-button {
   height: 3rem;
-  width: 7%;
-  font-size: 1.5rem;
+  width: 3.5rem;
+  color: #dfddc7;
+  font-size: 1.2rem;
   border-top-right-radius: 12%;
   border-bottom-right-radius: 12%;
-  border: 1px solid blue;
+  border: 2px solid #DF4E39;
+  margin-left: 5px;
+  margin-right: 10%;
 }
-.submit-button:hover,
+.run-button:hover,
 .toggle-button:hover,
 .submit-button:active,
 .toggle-button:active {
   outline: none;
   cursor: pointer;
   transition: 0.5s ease;
-  background: rgb(184,134,222);
+  background:  #EF8500;
 }
 
 /* --- Main section styles (lights) --- */
